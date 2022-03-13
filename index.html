@@ -12,52 +12,63 @@
     <title>Beachstays</title>
 </head>
 <body>
-    <header> 
-        <!-- <a href="#about" class="skipLink">Skip to About</a> -->
-        <nav class="navParent">
-            <a href="./index.html" class="logo">Beachstays</a>
-            <div class="mainNav">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#about"></a>About</li>
-                    <li><a href="#blog"></a>Blog</li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+    <header class="headerHome"> 
+        <a href="#about" class="skipLink">Skip to About</a>
+        <div class="wrapper">
+            <nav class="navParent">
+                <a href="./index.html" class="logo">Beachstays</a>
+                <div class="mainNav">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div> <!-- wrapper ends -->
+        <div class="headerContent">
+            <div class="headerImage">
+                <img src="./assets/header-box.jpg" alt="Black sunglasses with rainbow lens colour sitting in sand on a beach.">
             </div>
-        </nav>
-        <h3>welcome to</h3>
-        <h1>Beachstays</h1>
+            <div class="headerText">
+                <h3>welcome to</h3>
+                <h1>Beachstays</h1>
+            </div>
+        </div>
     </header> <!-- header ends -->
 
     <main> 
         
         <section class="about" id="about">
             <div class="wrapper">
-                <div class="aboutContent">
-                    <h4>Visit Guyana</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nostrum quisquam reiciendis facilis perferendis
-                        aperiam veritatis, unde nemo in quo placeat earum, rerum consequatur exercitationem temporibus aspernatur
-                        numquam neque tempore magnam esse quod. Nobis perspiciatis eum consequuntur hic esse ducimus, dolores iure
-                        placeat eaque enim odit provident asperiores quibusdam dolorum distinctio at ipsa incidunt in cumque,
-                        necessitatibus omnis. </p>
-                    <button>Find out more</button>
-                </div>
-                <div class="aboutImage">
-                    <img src="./assets/small-box.jpg" alt="Beautiful contemporary living room view looking out over the water.">
+                <div class="aboutParent">
+                    <div class="aboutContent">
+                        <h4>Visit Guyana</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nostrum quisquam reiciendis facilis perferendis
+                        aperiam veritatis, unde nemo in quo placeat earum, rerum necessitatibus omnis.</p>
+                        <button>Find out more</button>
+                    </div>
+                    <div class="aboutImage">
+                        <img src="./assets/small-box.jpg" alt="Beautiful contemporary living room view looking out over the water.">
+                    </div>
                 </div>
             </div> <!-- wrapper ends -->
         </section> <!-- about section ends -->
 
-        <div class="wrapper">
-            <div class="galleryParent">
-                <ul>
-                    <li><img src="./assets/gallery-image1.jpg" alt="View of a beach house with green foliage and dramatic clouds behind."></li>
-                    <li><img src="./assets/gallery-image2.jpg" alt="Outside of a blue beach house with wood siding."></li>
-                    <li><img src="./assets/gallery-image3.jpg" alt="Outside view of a larger beach house with palm trees and green foliage surrounding it."></li>
-            
-                </ul>
-            </div> <!-- gallery div ends -->
-        </div> <!-- wrapper ends -->
+        <div class="gallery">
+            <div class="wrapper">
+                <div class="galleryParent">
+                    <ul>
+                        <li><img src="./assets/gallery-image1.jpg" alt="View of a beach house with green foliage and dramatic clouds behind."></li>
+                        <li><img src="./assets/gallery-image2.jpg" alt="Outside of a blue beach house with wood siding."></li>
+                        <li><img src="./assets/gallery-image3.jpg" alt="Outside view of a larger beach house with palm trees and green foliage surrounding it."></li>
+                    </ul>
+                </div> <!-- gallery div ends -->
+            </div> <!-- wrapper ends -->
+        </div><!-- gallery div ends -->
+        
+        
         
         <section class="wrapper">
             <div class="infoParent">
@@ -133,16 +144,20 @@
         </section> <!-- blog section ends -->
     </main> <!-- main ends -->
 
-    <footer>
-        <h4>Free trip with Beachstays</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ipsa aliquid porro, facilis optio saepe, labore obcaecati ducimus rem esse animi quod suscipit provident deleniti quia possimus accusantium facere nam laudantium. Architecto consequatur minus praesentium mollitia aperiam, reprehenderit molestiae ad libero, dignissimos eligendi nesciunt recusandae at! Earum temporibus itaque nam!</p>
-        <button>Find out more</button>
+    <footer> 
+        <div class="footerContent">
+            <h4>Free trip with Beachstays</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ipsa aliquid porro, facilis optio saepe, labore
+                obcaecati ducimus rem esse animi quod suscipit provident deleniti quia possimus accusantium facere nam laudantium.
+                Architecto consequatur minus praesentium mollitia aperiam, reprehenderit molestiae ad libero, dignissimos eligendi
+                nesciunt recusandae at! Earum temporibus itaque nam!</p>
+            <button>Find out more</button>
+        </div>
         <div class="copyrightInfo">
             <a href="https://junocollege.com/">Created at Juno College of Technology</a>
         </div>
     </footer> <!-- footer ends -->
-    
-    
+
 </body>
 </html>
 
