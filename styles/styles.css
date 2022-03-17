@@ -374,6 +374,10 @@ button:hover, button:focus {
   border: 1px solid #063974;
 }
 
+a {
+  text-decoration: none;
+}
+
 .navParent,
 .mainNav ul {
   display: -webkit-box;
@@ -657,6 +661,9 @@ footer .footerContent {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.contentParent .postParent .postContent h4 {
+  letter-spacing: 3.2px;
+}
 .contentParent .postParent .postContent h5 {
   font-size: 1.4rem;
   font-style: italic;
@@ -673,4 +680,8 @@ footer .footerContent {
           flex-direction: column;
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
+}
+.contentParent .missionParent h5 {
+  font-size: 2.5rem;
+  letter-spacing: 3.2px;
 }
