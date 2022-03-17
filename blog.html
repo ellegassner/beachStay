@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1296eacb3d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Blog</title>
+</head>
+<body>
+    <header class="headerBlog">
+        <a href="#blogContent" class="skipLink">Skip to main content</a>
+        <div class="wrapper">
+            <nav class="navParent">
+                <a href="./index.html" class="logo">Beachstays</a>
+                <div class="mainNav">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h2>Blog</h2>
+        </div> <!-- wrapper ends -->
+    </header> <!-- header ends -->
+
+    <main>
+        <section class="contentParent">
+            <div class="postParent">
+                <div class="blogImage">
+                    <img src="./assets/post-image.jpg" alt="Outside view of a beach house at night with a walkway leading to it.">
+                </div> <!-- blogImage ends -->
+                <article class="postContent wrapper">
+                    <h4>Five days of ocean seas</h4>
+                    <h5>Monday January 21st, 2019 by <b>Bora</b></h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum architecto a quae suscipit soluta illo molestiae in incidunt sequi ut adipisci quisquam animi nam veritatis voluptas, ducimus temporibus aspernatur, nesciunt sunt rerum impedit explicabo obcaecati? 
+                    <br>
+                    <br> Doloremque culpa in est numquam sit! Maiores suscipit dignissimos 
+                    eligendi tenetur quos voluptatem corporis neque? Soluta hic numquam, nulla delectus consectetur, natus incidunt, deserunt voluptas molestiae adipisci expedita minus fuga non. Delectus consequuntur doloribus nostrum officia atque! 
+                    <br>
+                    <br>Veritatis molestiae est aut quis explicabo? Dignissimos est labore, consequuntur dolore non corrupti nam earum cumque repudiandae quaerat esse, odio blanditiis quis ipsum, exercitationem ipsa animi autem consectetur quasi laudantium? Corrupti quae excepturi quidem iste incidunt consequuntur ducimus neque quo ipsa quibusdam adipisci, porro ut eius delectus odit et fuga. 
+                    <br>
+                    <br>Numquam iusto exercitationem adipisci quidem perferendis hic consequatur, id deleniti inventore, odio blanditiis quis ipsum aspernatur atque corrupti rem quisquam expedita? Sunt facere delectus pariatur! Voluptates, architecto numquam?</p>
+                </article> <!-- postContent + wrapper ends -->
+            </div> <!-- postParent ends -->
+            
+            <div class="missionParent">
+                <div class="missionImage">
+                    <img src="./assets/gallery-image1.jpg" alt="View looking at a house on a beach with green foliage and blue sky behind.">
+                </div> <!-- missionImage ends -->
+                <div class="missionContent">
+                    <h5>Our mission</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem consequuntur laborum soluta possimus sed. Itaque.</p>
+                    <h5>Recent Posts</h5>
+                    <ul>
+                        <li><a href="#">Lorem ipsum dolor sit</a></li>
+                        <li><a href="#">Blanditiis quis ipsum</a></li>
+                        <li><a href="#">Sunt facere delectus</a></li>
+                        <li><a href="#">Odio blanditiis quis</a></li>
+                    </ul>
+                </div> <!-- missionContent ends -->
+            </div> <!-- missionParent ends -->
+        </section> <!-- contentParent ends -->
+
+        <section class="userSubmitParent wrapper">
+            <article class="userComments">
+                <h3>Comments:</h3>
+                <div class="userOne">
+                    <div class="userImage">
+                        <img src="./assets/comment-image.jpg" alt="Photo of a man with facial hair smiling.">
+                    </div> <!-- userImage ends -->
+                    <div class="userComment">
+                        <h5>
+                            <time datetime="">Tuesday October 9th, 2019 by Reyansh</time>
+                        </h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat nostrum, vero qui laborum soluta rerum eum nam sunt consectetur, cumque suscipit expedita nulla dolorem officiis! Reprehenderit et suscipit fugiat consectetur.</p>
+                    </div> <!-- userComment ends -->
+                </div> <!-- userOne ends -->
+                <div class="userTwo">
+                    <div class="userImage">
+                        <img src="./assets/comment-image2.jpg" alt="Photo of a girl outside with green background and orange sunglasses.">
+                    </div> <!-- userImage ends -->
+                    <div class="userComment">
+                        <h5>
+                            <time datetime="">Wednesday October 10th, 2019 by Olivia</time>
+                        </h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat nostrum, vero qui laborum soluta rerum eum nam sunt consectetur, cumque suscipit.</p>
+                    </div> <!-- userComment ends -->
+                </div> <!-- userTwo ends -->
+            </article> <!-- userComments ends -->
+            <form action="#" method="POST" class="commentForm" name="contactForm">
+                <div class="userDetails"> <!-- parentContainer for userName and userEmail -->
+                    <label for="userName" class="sr-only">Name</label>
+                    <input type="text" id="userName" placeholder="Name">
+
+                    <label for="userEmail" class="sr-only">Email</label>
+                    <input type="email" id="userEmail" placeholder="Email address">
+                </div>
+                <!-- textarea starts -->
+                <label for="userMessage" class="sr-only">Message</label>
+                <textarea name="userMessage" id="userMessage" cols="44" rows="10"></textarea>
+                <!-- submit Button starts -->
+                <button>Post Comment!</button>
+            </form>
+        </section> <!-- userSubmitParent wrapper ends -->
+    </main>
+    <footer>
+        <div class="copyrightInfo">
+            <a href="https://junocollege.com/">Created at Juno College of Technology</a>
+        </div>
+    </footer> <!-- footer ends -->
+</body>
+</html>
