@@ -1,0 +1,62 @@
+.headerBlog {
+    background-image: url(../assets/blog-image-1.jpg);
+    position: relative;
+    z-index: 10;
+    margin-bottom: 15%;
+}
+
+.contentParent {
+    display: flex;
+    justify-content: space-between;
+
+    .postParent {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 60%;
+        position: relative;
+        &::before {
+            content: "";
+            width: 5px;
+            height: 100%;
+            background-color: $secondary;
+            position: absolute;
+            right: -15px;
+        }&::after {
+            content: "";
+            width: calc(100% + 15px);
+            height: 5px;
+            background-color: $secondary;
+            position: absolute;
+            bottom: 0px;
+        }
+        
+
+        .blogImage {
+            position: absolute;
+            bottom: 100%;
+            z-index: 20;
+            object-fit: cover;
+            width: 100%;
+            box-shadow: 15px 15px $secondary;
+        }
+
+        .postContent {
+            margin-top: 15%;
+            flex-wrap: wrap;
+        
+            
+            h5 {
+                font-size: 1.4rem;
+                font-style: italic;
+                font-weight: 400;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    .missionParent {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+    }
+}

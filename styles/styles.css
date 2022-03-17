@@ -334,6 +334,16 @@ h5 {
   color: #063974;
 }
 
+h2 {
+  color: #FAFFFE;
+  font-size: 7.8rem;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 6.7px;
+  margin-bottom: 50px;
+  padding-top: 100px;
+}
+
 .wrapper {
   width: 80%;
   max-width: 1280px;
@@ -587,4 +597,80 @@ footer .footerContent {
   display: block;
   border-top: 0.5px solid #0C5F4C;
   color: #2C2C2C;
+}
+
+.headerBlog {
+  background-image: url(../assets/blog-image-1.jpg);
+  position: relative;
+  z-index: 10;
+  margin-bottom: 15%;
+}
+
+.contentParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contentParent .postParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  position: relative;
+}
+.contentParent .postParent::before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  background-color: #50E3C2;
+  position: absolute;
+  right: -15px;
+}
+.contentParent .postParent::after {
+  content: "";
+  width: calc(100% + 15px);
+  height: 5px;
+  background-color: #50E3C2;
+  position: absolute;
+  bottom: 0px;
+}
+.contentParent .postParent .blogImage {
+  position: absolute;
+  bottom: 100%;
+  z-index: 20;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  -webkit-box-shadow: 15px 15px #50E3C2;
+          box-shadow: 15px 15px #50E3C2;
+}
+.contentParent .postParent .postContent {
+  margin-top: 15%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contentParent .postParent .postContent h5 {
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.contentParent .missionParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
 }
