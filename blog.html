@@ -24,7 +24,7 @@
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -39,7 +39,7 @@
                 <div class="blogImage">
                     <img src="./assets/post-image.jpg" alt="Outside view of a beach house at night with a walkway leading to it.">
                 </div> <!-- blogImage ends -->
-                <article class="postContent wrapper">
+                <article class="postContent wrapper" id="blogContent">
                     <h4>Five days of ocean seas</h4>
                     <h5>Monday January 21st, 2019 by <b>Bora</b></h5>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum architecto a quae suscipit soluta illo molestiae in incidunt sequi ut adipisci quisquam animi nam veritatis voluptas, ducimus temporibus aspernatur, nesciunt sunt rerum impedit explicabo obcaecati? 
@@ -82,7 +82,7 @@
                         <h5>
                             <time datetime="">Tuesday October 9th, 2019 by Reyansh</time>
                         </h5>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat nostrum, vero qui laborum soluta rerum eum nam sunt consectetur, cumque suscipit expedita nulla dolorem officiis! Reprehenderit et suscipit fugiat consectetur.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat nostrum, vero qui Reprehenderit et suscipit fugiat consectetur.</p>
                     </div> <!-- userComment ends -->
                 </div> <!-- userOne ends -->
                 <div class="userTwo">
@@ -93,7 +93,7 @@
                         <h5>
                             <time datetime="">Wednesday October 10th, 2019 by Olivia</time>
                         </h5>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat nostrum, vero qui laborum soluta rerum eum nam sunt consectetur, cumque suscipit.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat nostrum, vero  eum nam sunt consectetur, cumque suscipit.</p>
                     </div> <!-- userComment ends -->
                 </div> <!-- userTwo ends -->
             </article> <!-- userComments ends -->
@@ -106,8 +106,8 @@
                     <input type="email" id="userEmail" placeholder="Email address">
                 </div>
                 <!-- textarea starts -->
-                <label for="userMessage" class="sr-only">Message</label>
-                <textarea name="userMessage" id="userMessage" cols="44" rows="10"></textarea>
+                <label for="userMessage" class="sr-only">Comment</label>
+                <textarea name="userMessage" id="userMessage" cols="44" rows="10" placeholder="Comment"></textarea>
                 <!-- submit Button starts -->
                 <button>Post Comment!</button>
             </form>

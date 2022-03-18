@@ -233,7 +233,7 @@ html {
 body {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 3.2rem;
   letter-spacing: 2px;
   background-color: #FAFFFE;
@@ -315,7 +315,7 @@ h4 {
   color: #0C5F4C;
   font-size: 3.5rem;
   font-weight: 700;
-  line-height: 5.8rem;
+  line-height: 58px;
   letter-spacing: 6.7px;
 }
 
@@ -332,6 +332,14 @@ h5 {
   line-height: 58px;
   letter-spacing: 6.7px;
   color: #063974;
+}
+
+h2 {
+  color: #FAFFFE;
+  font-size: 7.8rem;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 6.7px;
 }
 
 .wrapper {
@@ -362,6 +370,10 @@ button:hover, button:focus {
   background: #FAFFFE;
   color: #063974;
   border: 1px solid #063974;
+}
+
+a {
+  text-decoration: none;
 }
 
 .navParent,
@@ -587,4 +599,274 @@ footer .footerContent {
   display: block;
   border-top: 0.5px solid #0C5F4C;
   color: #2C2C2C;
+}
+
+.headerBlog {
+  background-image: url(../assets/blog-image-1.jpg);
+  position: relative;
+  z-index: 10;
+  margin-bottom: 15%;
+}
+.headerBlog h2 {
+  position: absolute;
+  bottom: 25%;
+}
+
+.contentParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contentParent .postParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  position: relative;
+}
+.contentParent .postParent::before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  background-color: #50E3C2;
+  position: absolute;
+  right: -15px;
+}
+.contentParent .postParent::after {
+  content: "";
+  width: calc(100% + 15px);
+  height: 5px;
+  background-color: #50E3C2;
+  position: absolute;
+  bottom: 0px;
+}
+.contentParent .postParent .blogImage {
+  position: absolute;
+  bottom: 80%;
+  z-index: 20;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  -webkit-box-shadow: 15px 15px #50E3C2;
+          box-shadow: 15px 15px #50E3C2;
+}
+.contentParent .postParent .postContent {
+  margin-top: 25%;
+  padding-top: 15%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contentParent .postParent .postContent h4 {
+  letter-spacing: 3.2px;
+}
+.contentParent .postParent .postContent h5 {
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.contentParent .missionParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+.contentParent .missionParent h5 {
+  font-size: 2.5rem;
+  letter-spacing: 3.2px;
+}
+.contentParent .missionParent li {
+  list-style-type: disc;
+  color: #50E3C2;
+}
+.contentParent .missionParent a {
+  color: #2C2C2C;
+  padding-left: 5px;
+}
+
+.userSubmitParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 30px 30px 0;
+  margin-left: 5%;
+}
+
+.userComments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+.userComments h3 {
+  color: #2C2C2C;
+  font-size: 2.5rem;
+}
+.userComments .userOne,
+.userComments .userTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 30px 0;
+}
+.userComments .userOne .userImage,
+.userComments .userTwo .userImage {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.userComments .userOne .userComment,
+.userComments .userTwo .userComment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 15%;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+.userComments .userOne .userComment h5,
+.userComments .userTwo .userComment h5 {
+  font-size: 1.8rem;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+}
+.userComments .userOne .userComment p,
+.userComments .userTwo .userComment p {
+  margin: 0;
+}
+
+form {
+  width: 60%;
+}
+
+footer {
+  background-image: none;
+  max-height: 50px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+  margin-top: 5%;
+}
+form .userDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form .userDetails input {
+  width: calc(50% - 30px);
+  border: none;
+  border-bottom: 2px solid #50E3C2;
+  padding: 15px 0 15px 15px;
+  font-family: "Lato", sans-serif;
+}
+form .userDetails input::-webkit-input-placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+form .userDetails input::-moz-placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+form .userDetails input:-ms-input-placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+form .userDetails input::-ms-input-placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+form .userDetails input::placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+form .userDetails input:focus, form .userDetails input:active {
+  border: 2px solid #D2F9F1;
+}
+form textarea {
+  border: 2px solid #50E3C2;
+  margin: 30px 0 30px 0;
+  font-family: "Lato", sans-serif;
+  padding: 15px 0 0 15px;
+  resize: none;
+}
+form textarea::-webkit-input-placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+form textarea::-moz-placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+form textarea:-ms-input-placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+form textarea::-ms-input-placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+form textarea::placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
 }
