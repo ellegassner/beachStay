@@ -233,7 +233,7 @@ html {
 body {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 3.2rem;
   letter-spacing: 2px;
   background-color: #FAFFFE;
@@ -315,7 +315,7 @@ h4 {
   color: #0C5F4C;
   font-size: 3.5rem;
   font-weight: 700;
-  line-height: 5.8rem;
+  line-height: 58px;
   letter-spacing: 6.7px;
 }
 
@@ -340,8 +340,6 @@ h2 {
   font-weight: 700;
   line-height: 58px;
   letter-spacing: 6.7px;
-  margin-bottom: 50px;
-  padding-top: 100px;
 }
 
 .wrapper {
@@ -609,6 +607,10 @@ footer .footerContent {
   z-index: 10;
   margin-bottom: 15%;
 }
+.headerBlog h2 {
+  position: absolute;
+  bottom: 25%;
+}
 
 .contentParent {
   display: -webkit-box;
@@ -648,7 +650,7 @@ footer .footerContent {
 }
 .contentParent .postParent .blogImage {
   position: absolute;
-  bottom: 100%;
+  bottom: 80%;
   z-index: 20;
   -o-object-fit: cover;
      object-fit: cover;
@@ -657,7 +659,8 @@ footer .footerContent {
           box-shadow: 15px 15px #50E3C2;
 }
 .contentParent .postParent .postContent {
-  margin-top: 15%;
+  margin-top: 25%;
+  padding-top: 15%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -678,10 +681,86 @@ footer .footerContent {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
 }
 .contentParent .missionParent h5 {
   font-size: 2.5rem;
   letter-spacing: 3.2px;
+}
+.contentParent .missionParent li {
+  list-style-type: disc;
+  color: #50E3C2;
+}
+.contentParent .missionParent a {
+  color: #2C2C2C;
+  padding-left: 5px;
+}
+
+.userSubmitParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 30px 30px 0;
+  margin-left: 5%;
+}
+
+.userComments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+.userComments h3 {
+  color: #2C2C2C;
+  font-size: 2.5rem;
+}
+.userComments .userOne,
+.userComments .userTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 30px 0;
+}
+.userComments .userOne .userImage,
+.userComments .userTwo .userImage {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.userComments .userOne .userComment,
+.userComments .userTwo .userComment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 15%;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+.userComments .userOne .userComment h5,
+.userComments .userTwo .userComment h5 {
+  font-size: 1.8rem;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+}
+.userComments .userOne .userComment p,
+.userComments .userTwo .userComment p {
+  margin: 0;
 }

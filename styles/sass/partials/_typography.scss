@@ -5,7 +5,7 @@ html {
 body {
     font-family: $mainFont;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 3.2rem;
     letter-spacing: 2px;
     background-color: $primary;
@@ -90,7 +90,7 @@ h4 {
     color: $quinternary;
     font-size: 3.5rem;
     font-weight: 700;
-    line-height: 5.8rem;
+    line-height: 58px;
     letter-spacing: 6.7px;
 }
 
@@ -115,7 +115,4 @@ h2 {
     font-weight: 700;
     line-height: 58px;
     letter-spacing: 6.7px;
-    margin-bottom: 50px;
-    padding-top: 100px;
-
 }
