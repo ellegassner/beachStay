@@ -1,0 +1,48 @@
+form {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-top: 5%;
+
+    .userDetails {
+        display: flex;
+        justify-content: space-between;
+        
+        input {
+            width: calc((100% / 2) - 30px);
+            border: none;
+            border-bottom: 2px solid $secondary;
+            padding: 15px 0 15px 15px;
+            font-family: $mainFont;
+            &::placeholder {
+                font-size: 2rem;
+                font-weight: 300;
+                line-height: 32px;
+                letter-spacing: 2px;
+            }
+            &:focus,
+            &:active {
+                border: 2px solid $tertiary;
+            }
+        }
+    }
+
+    textarea {
+        border: 2px solid $secondary;
+        margin: 30px 0 30px 0;
+        font-family: $mainFont;
+        padding: 15px 0 0 15px;
+        resize: none;
+        &::placeholder {
+                font-size: 2rem;
+                font-weight: 300;
+                line-height: 32px;
+                letter-spacing: 2px;
+                
+                
+            }
+
+        
+
+    }
+}
