@@ -1,0 +1,73 @@
+.headerContact {
+    background-image: url(../assets/contact-image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 15%;
+
+    h2 {
+        position: absolute;
+        bottom: 30%;
+    }
+}
+
+a {
+    color: $senary;
+}
+
+.contactParent {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .contactForm {
+        width: 65%;
+        position: absolute;
+        top: -480px;
+        box-shadow: 15px 15px $secondary;
+        z-index: 20;
+        background: $primary;
+        padding: 30px;
+    }
+
+    .infoParent {
+        width: 25%;
+        margin-left: 10%;
+        position: absolute;
+        right: 0;
+        top: -280px;
+
+        ul {
+            display: flex;
+            justify-content: left;
+            padding-left: 0;
+            color: $senary;
+
+            li {
+                padding-right: 15px;
+            }
+        }
+
+        address {
+            font-family: $mainFont;
+            font-style: normal;
+
+            a {
+                font-weight: 700;
+                padding-bottom: 10%;
+            }
+
+            p {
+                font-size: 1.5rem;
+                line-height: 8px;
+            }
+            
+        }
+    }
+}
+
+.footerContact {
+    background-image: none;
+    max-height: 50px;
+}
