@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1296eacb3d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header class="headerContact">
+        <a href="#contactContent" class="skipLink">Skip to main content</a>
+        <div class="wrapper">
+            <nav class="navParent">
+                <a href="./index.html" class="logo">Beachstays</a>
+                <div class="mainNav">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h2>Get in Touch</h2>
+        </div> <!-- wrapper ends -->
+    </header> <!-- header ends -->
+
+    <main id="contactContent">
+        <div class="contactParent wrapper">
+            <form action="#" method="POST" class="contactForm" name="contactForm">
+                <div class="userDetails">
+                    <!-- parentContainer for userName and userEmail -->
+                    <label for="userName" class="sr-only">Name</label>
+                    <input type="text" id="userName" placeholder="Name">
+            
+                    <label for="userEmail" class="sr-only">Email</label>
+                    <input type="email" id="userEmail" placeholder="Email address">
+                </div>
+                <!-- textarea starts -->
+                <label for="userMessage" class="sr-only">Message</label>
+                <textarea name="userMessage" id="userMessage" cols="44" rows="10" placeholder="Comment"></textarea>
+                <button>Post Comment!</button>
+            </form>
+            <div class="infoParent">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <span class="sr-only">Link to Facebook</span>
+                    <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                    <span class="sr-only">Link to Instagram</span>
+                    <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                    <span class="sr-only">Link to Twitter</span>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+                    <span class="sr-only">Link to Whatsapp</span>
+                </ul>
+                <address>
+                    <a href="mailto:info@email.com">info@email.com</a>
+                    <p>123 - 456 - 7890</p>
+                    <p>123 Queen Street West,</p>
+                    <p>Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2DS</p>
+                </address>
+            </div> <!-- infoParent starts -->
+        </div>
+    </main>
+    <footer class="footerContact">
+        <div class="copyrightInfo">
+            <a href="https://junocollege.com/">Created at Juno College of Technology</a>
+        </div>
+    </footer> <!-- footer ends -->
+</body>
+
+</html>

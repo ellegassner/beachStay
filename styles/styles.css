@@ -392,8 +392,107 @@ header {
   background-size: cover;
 }
 
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+  margin-top: 5%;
+}
+form .userDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form .userDetails input {
+  width: calc(50% - 30px);
+  border: none;
+  border-bottom: 2px solid #50E3C2;
+  padding: 15px 0 15px 15px;
+  font-family: "Lato", sans-serif;
+}
+form .userDetails input::-webkit-input-placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+form .userDetails input::-moz-placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+form .userDetails input:-ms-input-placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+form .userDetails input::-ms-input-placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+form .userDetails input::placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+form .userDetails input:focus, form .userDetails input:active {
+  border: 2px solid #D2F9F1;
+}
+form textarea {
+  border: 2px solid #50E3C2;
+  margin: 30px 0 30px 0;
+  font-family: "Lato", sans-serif;
+  padding: 15px 0 0 15px;
+  resize: none;
+}
+form textarea::-webkit-input-placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+form textarea::-moz-placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+form textarea:-ms-input-placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+form textarea::-ms-input-placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+form textarea::placeholder {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
 .headerHome {
   background-image: url(../assets/home-image-1.jpg);
+  background-size: cover;
+  background-position: center;
   position: relative;
   z-index: 10;
   margin-bottom: 15%;
@@ -603,13 +702,15 @@ footer .footerContent {
 
 .headerBlog {
   background-image: url(../assets/blog-image-1.jpg);
+  background-size: cover;
+  background-position: center;
   position: relative;
   z-index: 10;
   margin-bottom: 15%;
 }
 .headerBlog h2 {
   position: absolute;
-  bottom: 25%;
+  bottom: 30%;
 }
 
 .contentParent {
@@ -650,7 +751,7 @@ footer .footerContent {
 }
 .contentParent .postParent .blogImage {
   position: absolute;
-  bottom: 80%;
+  top: -480px;
   z-index: 20;
   -o-object-fit: cover;
      object-fit: cover;
@@ -659,8 +760,8 @@ footer .footerContent {
           box-shadow: 15px 15px #50E3C2;
 }
 .contentParent .postParent .postContent {
-  margin-top: 25%;
-  padding-top: 15%;
+  margin-top: 15%;
+  padding-top: 10%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -775,99 +876,76 @@ form {
   max-height: 50px;
 }
 
-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: none;
-  margin-top: 5%;
+.headerContact {
+  background-image: url(../assets/contact-image-1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 15%;
 }
-form .userDetails {
+.headerContact h2 {
+  position: absolute;
+  bottom: 30%;
+}
+
+a {
+  color: #2C2C2C;
+}
+
+.contactParent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
-form .userDetails input {
-  width: calc(50% - 30px);
-  border: none;
-  border-bottom: 2px solid #50E3C2;
-  padding: 15px 0 15px 15px;
+.contactParent .contactForm {
+  width: 65%;
+  position: absolute;
+  top: -480px;
+  -webkit-box-shadow: 15px 15px #50E3C2;
+          box-shadow: 15px 15px #50E3C2;
+  z-index: 20;
+  background: #FAFFFE;
+  padding: 30px;
+}
+.contactParent .infoParent {
+  width: 25%;
+  margin-left: 10%;
+  position: absolute;
+  right: 0;
+  top: -280px;
+}
+.contactParent .infoParent ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding-left: 0;
+  color: #2C2C2C;
+}
+.contactParent .infoParent ul li {
+  padding-right: 15px;
+}
+.contactParent .infoParent address {
   font-family: "Lato", sans-serif;
+  font-style: normal;
 }
-form .userDetails input::-webkit-input-placeholder {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 32px;
-  letter-spacing: 2px;
+.contactParent .infoParent address a {
+  font-weight: 700;
+  padding-bottom: 10%;
 }
-form .userDetails input::-moz-placeholder {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 32px;
-  letter-spacing: 2px;
+.contactParent .infoParent address p {
+  font-size: 1.5rem;
+  line-height: 8px;
 }
-form .userDetails input:-ms-input-placeholder {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-form .userDetails input::-ms-input-placeholder {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-form .userDetails input::placeholder {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-form .userDetails input:focus, form .userDetails input:active {
-  border: 2px solid #D2F9F1;
-}
-form textarea {
-  border: 2px solid #50E3C2;
-  margin: 30px 0 30px 0;
-  font-family: "Lato", sans-serif;
-  padding: 15px 0 0 15px;
-  resize: none;
-}
-form textarea::-webkit-input-placeholder {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-form textarea::-moz-placeholder {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-form textarea:-ms-input-placeholder {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-form textarea::-ms-input-placeholder {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-form textarea::placeholder {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 32px;
-  letter-spacing: 2px;
+
+.footerContact {
+  background-image: none;
+  max-height: 50px;
 }

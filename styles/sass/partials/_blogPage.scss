@@ -1,12 +1,14 @@
 .headerBlog {
     background-image: url(../assets/blog-image-1.jpg);
+    background-size: cover;
+    background-position: center;
     position: relative;
     z-index: 10;
     margin-bottom: 15%;
 
     h2 {
         position: absolute;
-        bottom: 25%;
+        bottom: 30%;
     }
 }
 
@@ -37,7 +39,7 @@
         
         .blogImage {
             position: absolute;
-            bottom: 80%;
+            top: -480px;
             z-index: 20;
             object-fit: cover;
             width: 100%;
@@ -45,8 +47,8 @@
         }
 
         .postContent {
-            margin-top: 25%;
-            padding-top: 15%;
+            margin-top: 15%;
+            padding-top: 10%;
             flex-wrap: wrap;
         
             h4 {
