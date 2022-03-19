@@ -272,7 +272,8 @@ ul {
   color: #FAFFFE;
 }
 
-.mainNav a:hover {
+.mainNav a:hover,
+.mainNav a:focus {
   color: #50E3C2;
 }
 
@@ -710,7 +711,7 @@ footer .footerContent {
 }
 .headerBlog h2 {
   position: absolute;
-  bottom: 30%;
+  bottom: 35%;
 }
 
 .contentParent {
@@ -886,7 +887,7 @@ form {
 }
 .headerContact h2 {
   position: absolute;
-  bottom: 30%;
+  bottom: 35%;
 }
 
 a {
@@ -948,4 +949,32 @@ a {
 .footerContact {
   background-image: none;
   max-height: 50px;
+}
+
+@media (max-width: 1215px) {
+  .headerHome {
+    position: relative;
+  }
+  .headerHome .headerContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .headerHome .headerImage img {
+    width: 650px;
+    position: absolute;
+    bottom: -5%;
+  }
+  .headerHome .headerText {
+    position: absolute;
+    bottom: 40%;
+    left: 35%;
+  }
+  .headerHome .headerText h1 {
+    font-size: 9rem;
+  }
+  .headerHome .headerText h3 {
+    font-size: 5rem;
+  }
 }

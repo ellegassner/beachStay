@@ -1,0 +1,35 @@
+// @media (max-width: 100vw) {
+//     //nav
+//         display: none;
+// }
+
+@media (max-width: 1215px) {
+    .headerHome {
+        position: relative;
+
+        .headerContent {
+            flex-direction: column;
+        }
+
+        .headerImage img {
+            width: 650px;
+            position: absolute;
+            bottom: -5%;
+        }
+
+        .headerText {
+            position: absolute;
+            bottom: 40%;
+            left: 35%;
+
+            h1 {
+                font-size: 9rem;
+            }
+
+            h3 {
+                font-size: 5rem;
+            }
+        }        
+    }
+
+}
