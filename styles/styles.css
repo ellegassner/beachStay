@@ -918,7 +918,7 @@ a {
   margin-left: 10%;
   position: absolute;
   right: 0;
-  top: -280px;
+  top: -200px;
 }
 .contactParent .infoParent ul {
   display: -webkit-box;
@@ -1224,5 +1224,41 @@ a {
     width: 100%;
     margin: 0 auto;
     padding-top: 10%;
+  }
+  form .userDetails {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form .userDetails input {
+    width: 100%;
+  }
+
+  .headerContact h2 {
+    position: revert;
+    padding-top: 5%;
+    text-align: center;
+  }
+
+  .contactParent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactParent .contactForm {
+    width: 80%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    top: -400px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 15px solid #50E3C2;
+  }
+  .contactParent .infoParent {
+    position: revert;
+    padding-top: 25%;
+    width: 100%;
   }
 }

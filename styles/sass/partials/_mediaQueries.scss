@@ -248,6 +248,38 @@
         width: 100%;
         margin: 0 auto;
         padding-top: 10%;   
+
+        .userDetails {
+            flex-direction: column;
+
+            input {
+                width: 100%;
+            }
+        }
+    }
+
+    //Contact Page Styling
+    .headerContact h2 {
+        position: revert;
+        padding-top: 5%;
+        text-align: center;
+    }
+    .contactParent {
+        flex-direction: column;
+
+        .contactForm {
+            width: 80%;
+            align-self: center;
+            top: -400px;        
+            box-shadow: none;
+            border: 15px solid $secondary;
+        }
+
+        .infoParent {
+            position: revert;
+            padding-top: 25%;
+            width: 100%;
+        }
     }
 
 }
