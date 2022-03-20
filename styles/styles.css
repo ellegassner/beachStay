@@ -1005,6 +1005,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-left: 0;
   }
   .headerHome .mainNav .dropdown i,
 .headerBlog .mainNav .dropdown i,
@@ -1200,6 +1201,7 @@ a {
   .userSubmitParent {
     margin: 0 auto;
     width: 80%;
+    padding-right: 0;
   }
 
   .userComments {
@@ -1248,7 +1250,7 @@ a {
             flex-direction: column;
   }
   .contactParent .contactForm {
-    width: 80%;
+    width: 100%;
     -ms-flex-item-align: center;
         align-self: center;
     top: -400px;
@@ -1336,5 +1338,30 @@ a {
   footer .homeFooterContent h4 {
     font-size: 3rem;
     line-height: 48px;
+  }
+
+  .contentParent .postParent .postContent {
+    padding-top: 12%;
+    margin-top: 10%;
+  }
+
+  .headerContact h2 {
+    padding-top: 0;
+    margin-top: 0;
+    line-height: 75px;
+  }
+
+  .contactParent .contactForm {
+    top: -350px;
+  }
+  .contactParent .infoParent {
+    text-align: center;
+    margin: 20% auto;
+    padding-top: 40%;
+  }
+  .contactParent .infoParent ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }

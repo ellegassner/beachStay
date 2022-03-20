@@ -50,6 +50,7 @@
             visibility: visible;
             display: flex;
             flex-direction: column;
+            padding-left: 0;
 
             i {
                 color: $secondary;
@@ -222,6 +223,7 @@
     .userSubmitParent {
         margin: 0 auto;
         width: 80%;
+        padding-right: 0;
     }
 
     .userComments {
@@ -269,7 +271,7 @@
         flex-direction: column;
 
         .contactForm {
-            width: 80%;
+            width: 100%;
             align-self: center;
             top: -400px;        
             box-shadow: none;
@@ -359,4 +361,44 @@
         }
     }
 
+    //Blog Page Styling
+    .contentParent {
+
+        .postParent {
+            
+            .postContent {
+                padding-top: 12%;
+                margin-top: 10%;
+                
+            }
+        }
+    }
+
+    //Contact page styling
+    .headerContact h2 {
+        padding-top: 0;
+        margin-top: 0;
+        line-height: 75px;
+    }
+
+    .contactParent {
+
+        .contactForm {
+            top: -350px;
+        }
+
+        .infoParent {
+            text-align: center;
+            margin: 20% auto;
+            padding-top: 40%;
+            
+            ul {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 510px) {
+    
 }
