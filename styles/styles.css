@@ -1262,3 +1262,79 @@ a {
     width: 100%;
   }
 }
+@media (max-width: 750px) {
+  .headerHome .headerContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100vw;
+  }
+  .headerHome .headerImage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100vw;
+    top: 60%;
+  }
+  .headerHome .headerImage img {
+    width: 66.6666666667vw;
+    border: 15px solid #50E3C2;
+    bottom: -15%;
+  }
+  .headerHome .headerText {
+    position: revert;
+    z-index: 30;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .homeContent {
+    padding-top: 10%;
+  }
+
+  .gallery .galleryParent ul li:last-child {
+    display: none;
+  }
+  .gallery .galleryParent ul li {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+
+  .infoParent .info1Parent,
+.infoParent .info2Parent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .infoParent .info1Parent i,
+.infoParent .info2Parent i {
+    font-size: 3rem;
+    margin-right: 30px;
+  }
+  .infoParent .info1Parent .info1Child1Content,
+.infoParent .info1Parent .info1Child2Content,
+.infoParent .info1Parent .info2Child1Content,
+.infoParent .info1Parent .info2Child2Content,
+.infoParent .info2Parent .info1Child1Content,
+.infoParent .info2Parent .info1Child2Content,
+.infoParent .info2Parent .info2Child1Content,
+.infoParent .info2Parent .info2Child2Content {
+    padding-left: 15%;
+  }
+
+  footer .homeFooterContent {
+    padding-top: 85%;
+  }
+  footer .homeFooterContent h4 {
+    font-size: 3rem;
+    line-height: 48px;
+  }
+}
