@@ -1176,7 +1176,7 @@ a {
 
   .headerBlog h2 {
     position: revert;
-    padding-top: 15%;
+    padding-top: 0;
     text-align: center;
   }
 

@@ -68,7 +68,7 @@
             display: flex;
             flex-direction: column;
             padding-left: 0;
-
+            
             i {
                 color: $secondary;
                 cursor: pointer;
@@ -199,7 +199,7 @@
     // Blog Page Styling
     .headerBlog h2 {
         position: revert;
-        padding-top: 15%;
+        padding-top: 0;
         text-align: center;
     }
 
