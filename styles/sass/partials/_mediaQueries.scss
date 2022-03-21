@@ -2,6 +2,10 @@
     .mainNav .dropdown {
         visibility: hidden;
     }
+
+    .footerContact {
+        padding-top: 5%;
+    }
 }
 
 @media (max-width: 1215px) {
@@ -118,6 +122,10 @@
         flex-direction: column;
         text-align: center;
 
+        .aboutContent {
+            padding-right: 0;
+        }
+
         .aboutImage {
             margin: 10% 0;
         }
@@ -218,6 +226,10 @@
         margin: 0 auto;
         width: 80%;
         padding-top: 10%;
+
+        ul {
+            padding-left: 0;
+        }
     }
 
     .userSubmitParent {
@@ -352,7 +364,7 @@
 
     footer {
         .homeFooterContent {
-            padding-top: 85%;
+            padding-top: 75%;
 
             h4 {
                 font-size: 3rem;
@@ -400,5 +412,146 @@
 }
 
 @media (max-width: 510px) {
-    
-}
+    //Home Page Styling
+    .navParent {
+        flex-direction: column;
+        text-align: center;
+
+        .mainNav .dropdown {
+            margin: 0 auto;
+
+            i {
+                margin-top: 25px;
+                align-self: center;
+            }
+
+        }
+    }
+
+    .headerHome {
+        display: flex;
+        flex-direction: column;
+
+        .headerImage img {
+            bottom: 1px;
+        }
+
+        .headerText {
+            h1 {
+                line-height: 8rem;
+                & span {
+                    display: block;
+                }
+            }
+
+            h3 {
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .aboutParent {
+        margin-bottom: 20%;
+
+        .aboutContent {
+            margin-bottom: 20%;
+        }
+    }
+
+    .gallery {
+        .galleryParent ul {
+            flex-direction: column;
+            & li {
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    .infoParent {
+
+        .info1Parent,
+        .info2Parent {
+
+            .info1Child1Content,
+            .info1Child2Content,
+            .info2Child1Content,
+            .info2Child2Content {
+                padding-left: 20%;
+
+                h6 {
+                    font-size: 2.5rem;
+                    line-height: 48px;
+                }
+            }
+
+        }
+    }
+
+    footer {
+        height: 200px;
+    }
+
+    //Blog Page Styling
+    .headerBlog h2 {
+        padding-top: 0;
+    }
+
+    .contentParent {
+        .postParent {
+
+            .blogImage {
+                top: -10%;
+                border: 8px solid $secondary;
+            }
+        }
+    }
+
+    .userComments {
+        .userOne,
+        .userTwo {
+            flex-direction: column;
+
+            .userImage {
+                position: revert;
+            }
+
+            .userComment {
+                padding-left: 0;
+                text-align: center;
+
+                h5 {
+                    line-height: 3rem;
+                    margin: 30px 0;
+                }
+            }
+        }
+    }
+
+    .copyrightInfo a {
+        font-size: 1rem;
+    }
+
+    //Contact Page Styling
+    .contactParent {
+        flex-direction: column;
+
+        .contactForm {
+            padding: 10px;
+            top: -300px;        
+            border: 8px solid $secondary;
+        }
+
+        .infoParent {
+            margin-top: 60%;
+
+            ul {
+                justify-content: space-around;
+
+                li {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}       

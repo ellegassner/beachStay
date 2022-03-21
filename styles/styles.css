@@ -955,6 +955,10 @@ a {
   .mainNav .dropdown {
     visibility: hidden;
   }
+
+  .footerContact {
+    padding-top: 5%;
+  }
 }
 @media (max-width: 1215px) {
   .headerHome {
@@ -1099,6 +1103,9 @@ a {
             flex-direction: column;
     text-align: center;
   }
+  .aboutParent .aboutContent {
+    padding-right: 0;
+  }
   .aboutParent .aboutImage {
     margin: 10% 0;
   }
@@ -1196,6 +1203,9 @@ a {
     margin: 0 auto;
     width: 80%;
     padding-top: 10%;
+  }
+  .missionContent ul {
+    padding-left: 0;
   }
 
   .userSubmitParent {
@@ -1333,7 +1343,7 @@ a {
   }
 
   footer .homeFooterContent {
-    padding-top: 85%;
+    padding-top: 75%;
   }
   footer .homeFooterContent h4 {
     font-size: 3rem;
@@ -1363,5 +1373,145 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media (max-width: 510px) {
+  .navParent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .navParent .mainNav .dropdown {
+    margin: 0 auto;
+  }
+  .navParent .mainNav .dropdown i {
+    margin-top: 25px;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+
+  .headerHome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .headerHome .headerImage img {
+    bottom: 1px;
+  }
+  .headerHome .headerText h1 {
+    line-height: 8rem;
+  }
+  .headerHome .headerText h1 span {
+    display: block;
+  }
+  .headerHome .headerText h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .aboutParent {
+    margin-bottom: 20%;
+  }
+  .aboutParent .aboutContent {
+    margin-bottom: 20%;
+  }
+
+  .gallery .galleryParent ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery .galleryParent ul li {
+    padding-bottom: 10px;
+  }
+
+  .infoParent .info1Parent .info1Child1Content,
+.infoParent .info1Parent .info1Child2Content,
+.infoParent .info1Parent .info2Child1Content,
+.infoParent .info1Parent .info2Child2Content,
+.infoParent .info2Parent .info1Child1Content,
+.infoParent .info2Parent .info1Child2Content,
+.infoParent .info2Parent .info2Child1Content,
+.infoParent .info2Parent .info2Child2Content {
+    padding-left: 20%;
+  }
+  .infoParent .info1Parent .info1Child1Content h6,
+.infoParent .info1Parent .info1Child2Content h6,
+.infoParent .info1Parent .info2Child1Content h6,
+.infoParent .info1Parent .info2Child2Content h6,
+.infoParent .info2Parent .info1Child1Content h6,
+.infoParent .info2Parent .info1Child2Content h6,
+.infoParent .info2Parent .info2Child1Content h6,
+.infoParent .info2Parent .info2Child2Content h6 {
+    font-size: 2.5rem;
+    line-height: 48px;
+  }
+
+  footer {
+    height: 200px;
+  }
+
+  .headerBlog h2 {
+    padding-top: 0;
+  }
+
+  .contentParent .postParent .blogImage {
+    top: -10%;
+    border: 8px solid #50E3C2;
+  }
+
+  .userComments .userOne,
+.userComments .userTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .userComments .userOne .userImage,
+.userComments .userTwo .userImage {
+    position: revert;
+  }
+  .userComments .userOne .userComment,
+.userComments .userTwo .userComment {
+    padding-left: 0;
+    text-align: center;
+  }
+  .userComments .userOne .userComment h5,
+.userComments .userTwo .userComment h5 {
+    line-height: 3rem;
+    margin: 30px 0;
+  }
+
+  .copyrightInfo a {
+    font-size: 1rem;
+  }
+
+  .contactParent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactParent .contactForm {
+    padding: 10px;
+    top: -300px;
+    border: 8px solid #50E3C2;
+  }
+  .contactParent .infoParent {
+    margin-top: 60%;
+  }
+  .contactParent .infoParent ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .contactParent .infoParent ul li {
+    padding: 0;
   }
 }
