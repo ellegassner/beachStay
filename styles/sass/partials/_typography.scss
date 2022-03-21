@@ -43,7 +43,8 @@ ul {
     color: $primary;
 }
 
-.mainNav a:hover {
+.mainNav a:hover,
+.mainNav a:focus {
     color: $secondary;
 }
 
