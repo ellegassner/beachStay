@@ -970,6 +970,31 @@ a {
   .footerContact {
     padding-top: 5%;
   }
+
+  .contentParent .postParent .postContent {
+    padding-top: 25%;
+  }
+
+  .headerContact h2 {
+    bottom: 20%;
+  }
+
+  footer {
+    height: 600px;
+  }
+}
+@media (max-width: 1350px) {
+  .contentParent .postParent .postContent {
+    padding-top: 15%;
+  }
+
+  .headerContact h2 {
+    bottom: 35%;
+  }
+
+  footer {
+    height: 400px;
+  }
 }
 @media (max-width: 1215px) {
   .headerHome {
