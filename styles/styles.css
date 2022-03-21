@@ -1420,7 +1420,7 @@ a {
             flex-direction: column;
   }
   .headerHome .headerImage img {
-    bottom: -30px;
+    bottom: -50px;
   }
   .headerHome .headerText h1 {
     line-height: 8rem;
