@@ -445,12 +445,11 @@
         flex-direction: column;
 
         .headerImage img {
-            bottom: -20px;
+            bottom: -30px;
         }
 
         .headerText {
             h1 {
-                font-size: 6rem;
                 line-height: 8rem;
                 & span {
                     display: block;
