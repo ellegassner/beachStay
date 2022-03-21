@@ -906,7 +906,7 @@ a {
 .contactParent .contactForm {
   width: 65%;
   position: absolute;
-  top: -480px;
+  top: -450px;
   -webkit-box-shadow: 15px 15px #50E3C2;
           box-shadow: 15px 15px #50E3C2;
   z-index: 20;
@@ -1263,14 +1263,14 @@ a {
     width: 100%;
     -ms-flex-item-align: center;
         align-self: center;
-    top: -400px;
+    top: -300px;
     -webkit-box-shadow: none;
             box-shadow: none;
     border: 15px solid #50E3C2;
   }
   .contactParent .infoParent {
     position: revert;
-    padding-top: 25%;
+    padding-top: 35%;
     width: 100%;
   }
 }

@@ -95,7 +95,6 @@
             ul:hover > li {
                 visibility: visible;
             }
-
         }
 
         .headerImage img {
@@ -285,14 +284,14 @@
         .contactForm {
             width: 100%;
             align-self: center;
-            top: -400px;        
+            top: -300px;        
             box-shadow: none;
             border: 15px solid $secondary;
         }
 
         .infoParent {
             position: revert;
-            padding-top: 25%;
+            padding-top: 35%;
             width: 100%;
         }
     }
@@ -381,7 +380,6 @@
             .postContent {
                 padding-top: 12%;
                 margin-top: 10%;
-                
             }
         }
     }
@@ -484,7 +482,6 @@
                     line-height: 48px;
                 }
             }
-
         }
     }
 
