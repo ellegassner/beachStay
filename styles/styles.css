@@ -1078,7 +1078,7 @@ a {
 .headerContact .mainNav .toggle:active .headerHome .mainNav .toggle:focus-within,
 .headerContact .mainNav .toggle:active .headerBlog .mainNav .toggle:focus-within,
 .headerContact .mainNav .toggle:active .headerContact .mainNav .toggle:focus-within {
-    color: #FAFFFE;
+    background: #FAFFFE;
   }
   .headerHome .mainNav .dropdown,
 .headerBlog .mainNav .dropdown,
@@ -1105,23 +1105,27 @@ a {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
-  .headerHome .mainNav .dropdown li:hover, .headerHome .mainNav .dropdown li:focus, .headerHome .mainNav .dropdown li:active,
+  .headerHome .mainNav .dropdown li:hover, .headerHome .mainNav .dropdown li:focus, .headerHome .mainNav .dropdown li:active, .headerHome .mainNav .dropdown li:focus-within,
 .headerBlog .mainNav .dropdown li:hover,
 .headerBlog .mainNav .dropdown li:focus,
 .headerBlog .mainNav .dropdown li:active,
+.headerBlog .mainNav .dropdown li:focus-within,
 .headerContact .mainNav .dropdown li:hover,
 .headerContact .mainNav .dropdown li:focus,
-.headerContact .mainNav .dropdown li:active {
+.headerContact .mainNav .dropdown li:active,
+.headerContact .mainNav .dropdown li:focus-within {
     cursor: pointer;
     background: #FAFFFE;
   }
-  .headerHome .mainNav .dropdown li:hover a, .headerHome .mainNav .dropdown li:focus a, .headerHome .mainNav .dropdown li:active a,
+  .headerHome .mainNav .dropdown li:hover a, .headerHome .mainNav .dropdown li:focus a, .headerHome .mainNav .dropdown li:active a, .headerHome .mainNav .dropdown li:focus-within a,
 .headerBlog .mainNav .dropdown li:hover a,
 .headerBlog .mainNav .dropdown li:focus a,
 .headerBlog .mainNav .dropdown li:active a,
+.headerBlog .mainNav .dropdown li:focus-within a,
 .headerContact .mainNav .dropdown li:hover a,
 .headerContact .mainNav .dropdown li:focus a,
-.headerContact .mainNav .dropdown li:active a {
+.headerContact .mainNav .dropdown li:active a,
+.headerContact .mainNav .dropdown li:focus-within a {
     color: #50E3C2;
   }
   .headerHome .mainNav,

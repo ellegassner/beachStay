@@ -121,7 +121,7 @@
             display: block;
             &:active
             &:focus-within {
-                color: $primary;
+                background: $primary;
                 
             }
         }
@@ -139,9 +139,10 @@
                 background: $secondary;
                 transition: .5s;
                 transition: all 0.5s ease;
-                &:hover,
+                &:hover,    
                 &:focus,
-                &:active {
+                &:active,
+                &:focus-within {
                     cursor: pointer;
                     background: $primary;
 
