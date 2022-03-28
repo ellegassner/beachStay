@@ -30,6 +30,8 @@ function toggleDropdown(){
 
 const formEl = document.querySelector(".commentForm");
 const commentEl = document.querySelector(".userComments");
+const inputElement = document.querySelector('input');
+const task = inputElement.value;
 
 formEl.addEventListener("submit", function(event){
     event.preventDefault();
@@ -38,6 +40,7 @@ formEl.addEventListener("submit", function(event){
     const userName = document.getElementById("userName").value;
     const userMessage = document.getElementById("userMessage").value;
     const userEmail = document.getElementById("userEmail").value;
+    
 
 
     let date = new Date();
@@ -47,7 +50,8 @@ formEl.addEventListener("submit", function(event){
     let year = date.getFullYear();
     
 
-    if (userName){
+    if (task){
+        inputElement.value = "";
 
         const commentParent = document.createElement("div");
         commentParent.classList.add("user");
