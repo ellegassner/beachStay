@@ -40,8 +40,15 @@ formEl.addEventListener("submit", function(event){
     const userEmail = document.getElementById("userEmail").value;
 
 
+    let date = new Date();
+    let day = date.getDay();
+    let month = date.getMonth();
+    let dayNumber = date.getDate();
+    let year = date.getFullYear();
+    
 
     if (userName){
+
         const commentParent = document.createElement("div");
         commentParent.classList.add("user");
 
@@ -59,7 +66,7 @@ formEl.addEventListener("submit", function(event){
         userComment.classList.add("userComment");
 
         const userHeading = document.createElement("h5");
-        userHeading.textContent = `${date} by ${userName}`;
+        userHeading.textContent = `${day} ${month} ${dayNumber}th, ${year} by ${userName}`;
 
         const userPara = document.createElement("p");
         userPara.textContent = userMessage;
