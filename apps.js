@@ -29,6 +29,7 @@ function toggleDropdown(){
 //display to the page
 
 const formEl = document.querySelector(".commentForm");
+const commentEl = document.querySelector(".userComments");
 
 formEl.addEventListener("submit", function(event){
     event.preventDefault();
@@ -36,16 +37,36 @@ formEl.addEventListener("submit", function(event){
     
     const userName = document.getElementById("userName").value;
     const userMessage = document.getElementById("userMessage").value;
-    // let date = new Date();
-
-    
+    const userEmail = document.getElementById("userEmail").value;
 
 
 
-    console.log(userName);
-    console.log(userMessage);
-    console.log(userInputsDisplays);
-    console.log(date);
+    if (userName){
+        const commentParent = document.createElement("div");
+        commentParent.classList.add("user");
 
+        commentEl.appendChild(commentParent);
 
+        const userImage = document.createElement("div");
+        userImage.classList.add("userImage");
+        const img = document.createElement("img");
+        img.src = "http://placekitten.com/300/300";
+
+        commentParent.appendChild(userImage);
+        userImage.appendChild(img);
+
+        const userComment = document.createElement("div");
+        userComment.classList.add("userComment");
+
+        const userHeading = document.createElement("h5");
+        userHeading.textContent = `${date} by ${userName}`;
+
+        const userPara = document.createElement("p");
+        userPara.textContent = userMessage;
+
+        userComment.appendChild(userHeading);
+        userComment.appendChild(userPara);
+        commentParent.appendChild(userComment);
+
+    }    
 })
