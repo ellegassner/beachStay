@@ -30,19 +30,33 @@ function toggleDropdown(){
 
 const formEl = document.querySelector(".commentForm");
 const commentEl = document.querySelector(".userComments");
-const inputElement = document.querySelector('input');
-const task = inputElement.value;
+const inputElements = Array.from(formEl.elements);
+// console.log(inputElements);
+
+// inputElements.forEach(function (input) {
+//     const task = input.value;
+//     console.log(task);
+// })
+
+
+// const inputName = document.querySelector('input');
+// const task = inputElement.value;
+const userName = document.querySelector("input[name=userName]");
+const userNameInput = userName.value;
+
+const userEmail = document.querySelector("input[name=userEmail]");
+const userEmailInput = userEmail.value;
+
+const userMessage = document.querySelector("textarea");
+const userMessageInput = userMessage.value;
+console.log(userMessageInput);
+
+
 
 formEl.addEventListener("submit", function(event){
     event.preventDefault();
 
     
-    const userName = document.getElementById("userName").value;
-    const userMessage = document.getElementById("userMessage").value;
-    const userEmail = document.getElementById("userEmail").value;
-    
-
-
     let date = new Date();
     let day = date.getDay();
     let month = date.getMonth();
@@ -50,8 +64,10 @@ formEl.addEventListener("submit", function(event){
     let year = date.getFullYear();
     
 
-    if (task){
-        inputElement.value = "";
+    if (userNameInput){
+        userName.value = "";
+        userEmail.value = "";
+        userMessage.value = "";
 
         const commentParent = document.createElement("div");
         commentParent.classList.add("user");
@@ -70,10 +86,10 @@ formEl.addEventListener("submit", function(event){
         userComment.classList.add("userComment");
 
         const userHeading = document.createElement("h5");
-        userHeading.textContent = `${day} ${month} ${dayNumber}th, ${year} by ${userName}`;
+        userHeading.textContent = `${day} ${month} ${dayNumber}th, ${year} by ${userNameInput}`;
 
         const userPara = document.createElement("p");
-        userPara.textContent = userMessage;
+        userPara.textContent = userMessageInput;
 
         userComment.appendChild(userHeading);
         userComment.appendChild(userPara);
