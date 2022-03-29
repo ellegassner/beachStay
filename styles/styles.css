@@ -836,8 +836,7 @@ footer .homeFooterContent {
   color: #2C2C2C;
   font-size: 2.5rem;
 }
-.userComments .userOne,
-.userComments .userTwo {
+.userComments .user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -845,8 +844,7 @@ footer .homeFooterContent {
       align-content: center;
   margin: 30px 0;
 }
-.userComments .userOne .userImage,
-.userComments .userTwo .userImage {
+.userComments .user .userImage {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -854,8 +852,7 @@ footer .homeFooterContent {
   -ms-flex-item-align: center;
       align-self: center;
 }
-.userComments .userOne .userComment,
-.userComments .userTwo .userComment {
+.userComments .user .userComment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -867,15 +864,13 @@ footer .homeFooterContent {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
 }
-.userComments .userOne .userComment h5,
-.userComments .userTwo .userComment h5 {
+.userComments .user .userComment h5 {
   font-size: 1.8rem;
   letter-spacing: 2.5px;
   font-weight: 400;
   line-height: 3rem;
 }
-.userComments .userOne .userComment p,
-.userComments .userTwo .userComment p {
+.userComments .user .userComment p {
   margin: 0;
 }
 
@@ -1024,8 +1019,7 @@ a {
     font-size: 5rem;
   }
 
-  .userComments .userOne .userComment h5,
-.userComments .userTwo .userComment h5 {
+  .userComments .user .userComment h5 {
     line-height: 4rem;
   }
 }
@@ -1285,14 +1279,12 @@ a {
   .userComments {
     margin-top: 10%;
   }
-  .userComments .userOne .userComment,
-.userComments .userTwo .userComment {
+  .userComments .user .userComment {
     padding-left: 30%;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  .userComments .userOne .userComment p,
-.userComments .userTwo .userComment p {
+  .userComments .user .userComment p {
     line-height: 3rem;
   }
 

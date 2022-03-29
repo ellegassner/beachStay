@@ -87,7 +87,7 @@
         <section class="userSubmitParent wrapper">
             <article class="userComments">
                 <h3>Comments:</h3>
-                <div class="userOne">
+                <div class="user">
                     <div class="userImage">
                         <img src="./assets/comment-image.jpg" alt="Photo of a man with facial hair smiling.">
                     </div> <!-- userImage ends -->
@@ -98,7 +98,7 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat nostrum, vero qui Reprehenderit et suscipit fugiat consectetur.</p>
                     </div> <!-- userComment ends -->
                 </div> <!-- userOne ends -->
-                <div class="userTwo">
+                <div class="user">
                     <div class="userImage">
                         <img src="./assets/comment-image2.jpg" alt="Photo of a girl outside with green background and orange sunglasses.">
                     </div> <!-- userImage ends -->
@@ -109,18 +109,19 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat nostrum, vero  eum nam sunt consectetur, cumque suscipit.</p>
                     </div> <!-- userComment ends -->
                 </div> <!-- userTwo ends -->
+                <div></div>
             </article> <!-- userComments ends -->
             <form action="#" method="POST" class="commentForm" name="commentForm">
                 <div class="userDetails"> <!-- parentContainer for userName and userEmail -->
                     <label for="userName" class="sr-only">Name</label>
-                    <input type="text" id="userName" placeholder="Name">
+                    <input type="text" id="userName" name="userName" placeholder="Name">
 
                     <label for="userEmail" class="sr-only">Email</label>
-                    <input type="email" id="userEmail" placeholder="Email address">
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Email address">
                 </div>
                 <!-- textarea starts -->
                 <label for="userMessage" class="sr-only">Comment</label>
-                <textarea name="userMessage" id="userMessage" cols="44" rows="10" placeholder="Comment"></textarea>
+                <textarea name="userMessage" id="userMessage" name="userMessage" cols="44" rows="10" placeholder="Comment"></textarea>
                 <!-- submit Button starts -->
                 <button>Post Comment!</button>
             </form>
