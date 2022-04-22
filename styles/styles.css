@@ -836,8 +836,7 @@ footer .homeFooterContent {
   color: #2C2C2C;
   font-size: 2.5rem;
 }
-.userComments .userOne,
-.userComments .userTwo {
+.userComments .user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -845,8 +844,7 @@ footer .homeFooterContent {
       align-content: center;
   margin: 30px 0;
 }
-.userComments .userOne .userImage,
-.userComments .userTwo .userImage {
+.userComments .user .userImage {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -854,8 +852,7 @@ footer .homeFooterContent {
   -ms-flex-item-align: center;
       align-self: center;
 }
-.userComments .userOne .userComment,
-.userComments .userTwo .userComment {
+.userComments .user .userComment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -867,15 +864,13 @@ footer .homeFooterContent {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
 }
-.userComments .userOne .userComment h5,
-.userComments .userTwo .userComment h5 {
+.userComments .user .userComment h5 {
   font-size: 1.8rem;
   letter-spacing: 2.5px;
   font-weight: 400;
   line-height: 3rem;
 }
-.userComments .userOne .userComment p,
-.userComments .userTwo .userComment p {
+.userComments .user .userComment p {
   margin: 0;
 }
 
@@ -963,8 +958,9 @@ a {
 }
 
 @media (max-width: 100vw) {
-  .mainNav .dropdown {
-    visibility: hidden;
+  .mainNav button,
+.mainNav .dropdown {
+    display: none;
   }
 
   .footerContact {
@@ -1023,8 +1019,7 @@ a {
     font-size: 5rem;
   }
 
-  .userComments .userOne .userComment h5,
-.userComments .userTwo .userComment h5 {
+  .userComments .user .userComment h5 {
     line-height: 4rem;
   }
 }
@@ -1039,10 +1034,49 @@ a {
 .headerContact .mainNav .desktopNav {
     display: none;
   }
+  .headerHome .mobileNav,
+.headerBlog .mobileNav,
+.headerContact .mobileNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .headerHome .mainNav .toggle,
+.headerBlog .mainNav .toggle,
+.headerContact .mainNav .toggle {
+    color: #50E3C2;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 4rem;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    display: block;
+  }
+  .headerHome .mainNav .toggle:active .headerHome .mainNav .toggle:focus-within,
+.headerHome .mainNav .toggle:active .headerBlog .mainNav .toggle:focus-within,
+.headerHome .mainNav .toggle:active .headerContact .mainNav .toggle:focus-within,
+.headerBlog .mainNav .toggle:active .headerHome .mainNav .toggle:focus-within,
+.headerBlog .mainNav .toggle:active .headerBlog .mainNav .toggle:focus-within,
+.headerBlog .mainNav .toggle:active .headerContact .mainNav .toggle:focus-within,
+.headerContact .mainNav .toggle:active .headerHome .mainNav .toggle:focus-within,
+.headerContact .mainNav .toggle:active .headerBlog .mainNav .toggle:focus-within,
+.headerContact .mainNav .toggle:active .headerContact .mainNav .toggle:focus-within {
+    background: #FAFFFE;
+  }
   .headerHome .mainNav .dropdown,
 .headerBlog .mainNav .dropdown,
 .headerContact .mainNav .dropdown {
-    visibility: visible;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1052,47 +1086,40 @@ a {
             flex-direction: column;
     padding-left: 0;
   }
-  .headerHome .mainNav .dropdown i,
-.headerBlog .mainNav .dropdown i,
-.headerContact .mainNav .dropdown i {
-    color: #50E3C2;
-    cursor: pointer;
-    font-size: 4rem;
-    margin-bottom: 10px;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .headerHome .mainNav .dropdown li,
 .headerBlog .mainNav .dropdown li,
 .headerContact .mainNav .dropdown li {
-    display: block;
-    width: 150px;
-    padding-left: 5px;
+    visibility: hidden;
+    width: 100%;
+    padding: 5px;
     text-align: center;
+    background: #50E3C2;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    visibility: hidden;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    padding-top: 10px;
-    background: #50E3C2;
   }
-  .headerHome .mainNav .dropdown li:hover, .headerHome .mainNav .dropdown li:focus,
+  .headerHome .mainNav .dropdown li:hover, .headerHome .mainNav .dropdown li:focus, .headerHome .mainNav .dropdown li:active, .headerHome .mainNav .dropdown li:focus-within,
 .headerBlog .mainNav .dropdown li:hover,
 .headerBlog .mainNav .dropdown li:focus,
+.headerBlog .mainNav .dropdown li:active,
+.headerBlog .mainNav .dropdown li:focus-within,
 .headerContact .mainNav .dropdown li:hover,
-.headerContact .mainNav .dropdown li:focus {
+.headerContact .mainNav .dropdown li:focus,
+.headerContact .mainNav .dropdown li:active,
+.headerContact .mainNav .dropdown li:focus-within {
     cursor: pointer;
     background: #FAFFFE;
   }
-  .headerHome .mainNav .dropdown li:hover a, .headerHome .mainNav .dropdown li:focus a,
+  .headerHome .mainNav .dropdown li:hover a, .headerHome .mainNav .dropdown li:focus a, .headerHome .mainNav .dropdown li:active a, .headerHome .mainNav .dropdown li:focus-within a,
 .headerBlog .mainNav .dropdown li:hover a,
 .headerBlog .mainNav .dropdown li:focus a,
+.headerBlog .mainNav .dropdown li:active a,
+.headerBlog .mainNav .dropdown li:focus-within a,
 .headerContact .mainNav .dropdown li:hover a,
-.headerContact .mainNav .dropdown li:focus a {
+.headerContact .mainNav .dropdown li:focus a,
+.headerContact .mainNav .dropdown li:active a,
+.headerContact .mainNav .dropdown li:focus-within a {
     color: #50E3C2;
   }
   .headerHome .mainNav,
@@ -1104,14 +1131,7 @@ a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-  }
-  .headerHome .mainNav ul:focus > li,
-.headerHome .mainNav ul:hover > li,
-.headerBlog .mainNav ul:focus > li,
-.headerBlog .mainNav ul:hover > li,
-.headerContact .mainNav ul:focus > li,
-.headerContact .mainNav ul:hover > li {
-    visibility: visible;
+    margin-bottom: 10%;
   }
   .headerHome .headerImage img,
 .headerBlog .headerImage img,
@@ -1259,14 +1279,12 @@ a {
   .userComments {
     margin-top: 10%;
   }
-  .userComments .userOne .userComment,
-.userComments .userTwo .userComment {
+  .userComments .user .userComment {
     padding-left: 30%;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  .userComments .userOne .userComment p,
-.userComments .userTwo .userComment p {
+  .userComments .user .userComment p {
     line-height: 3rem;
   }
 
@@ -1420,17 +1438,24 @@ a {
 }
 @media (max-width: 510px) {
   .navParent {
+    text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .navParent .mainNav .dropdown {
+  .navParent .mainNav {
     margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 15px;
   }
-  .navParent .mainNav .dropdown i {
-    margin-top: 25px;
+  .navParent .mainNav .mobileNav .toggle {
     -ms-flex-item-align: center;
         align-self: center;
   }

@@ -26,12 +26,19 @@
                         <li><a href="./blog.html">Blog</a></li>
                         <li><a href="./contact.html">Contact</a></li>
                     </ul>
-                    <ul class="dropdown"><i class="fa-solid fa-circle-chevron-down" aria-hidden="true"><span class="sr-only">Dropdown Menu</span> </i>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
+                    <div class="mobileNav">
+                        <button onclick="toggleDropdown()" id="toggle" class="toggle" aria-label="navMenu">
+                            <i class="fa-solid fa-circle-chevron-down" aria-hidden="true"><span class="sr-only">Dropdown Menu</span></i>
+                        </button>
+                        <div class="mobileNavLinks"> 
+                            <ul class="dropdown">
+                                <li class="listItem"><a href="./index.html">Home</a></li>
+                                <li class="listItem"><a href="#about">About</a></li>
+                                <li class="listItem"><a href="./blog.html">Blog</a></li>
+                                <li class="listItem"><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div> <!-- wrapper ends -->
@@ -160,7 +167,8 @@
             <a href="https://junocollege.com/">Created at Juno College of Technology</a>
         </div>
     </footer> <!-- footer ends -->
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="apps.js"></script>
 </body>
 </html>
 
