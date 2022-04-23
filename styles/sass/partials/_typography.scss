@@ -28,10 +28,10 @@ ul {
     left: 0;
 }
 
-// move to media if doing mobile-first
 .mainNav {
     flex-basis: 50%;
 }
+
 .mainNav li {
     font-size: 2rem;
     text-transform: uppercase;
@@ -48,9 +48,6 @@ ul {
     color: $secondary;
 }
 
-// .mainNav {
-//     display: none;
-// }
 
 .logo {
     text-decoration: none;
